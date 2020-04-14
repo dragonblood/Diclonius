@@ -12,13 +12,6 @@ from django.utils.datastructures import MultiValueDictKeyError
 from . models import file_storage
 from django.templatetags.static import static
 
-
-# def index(request):
-#     path = settings.MEDIA_ROOT
-#     print(path)
-#     img_list = os.listdir(path)
-#     context = {'images' : img_list}
-#     return render(request, "Diclonius/Diclonius.html", context)
 	
 def file_storage_to_db(request):
 	file_path = os.path.join(settings.CONTENT_DIR, 'assets/img')

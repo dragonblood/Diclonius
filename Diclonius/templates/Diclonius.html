@@ -1,15 +1,16 @@
 {% extends 'layouts/default/page.html' %} {% load bootstrap4 %} {% load i18n %} {% block content %} {% load static %}
 
 <h1>Diclonius</h1>
+<br /><br />
 <div class="card dark-bg bg-dark container mt-3">
     <h2>
         <br /> File Upload
         <hr class="bg-light" />
     </h2>
     <p>
-        <button class="btn">Super resolutions</button><br />
-        <button class="btn">Image Recolorization</button><br />
-        <button class="btn">Image denoising</button><br />
+        <button class="btn btn-info">Super resolutions</button>
+        <button class="btn btn-success disabled">Image Recolorization</button>
+        <button class="btn btn-warning disabled">Image denoising</button><br /><br />
     </p>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}

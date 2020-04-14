@@ -15,8 +15,12 @@ body {
     background: #ad5389;
     /* fallback for old browsers */
     background: -webkit-linear-gradient( to top, #3c1053, #ad5389);
+    background: url('../img/bak.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient( to top, #3c1053, #ad5389);
+    /* background: linear-gradient( to top, #3c1053, #ad5389); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
